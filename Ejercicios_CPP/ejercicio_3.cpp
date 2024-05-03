@@ -1,3 +1,6 @@
+/*Escriba el programa para calcular la suma de los cuadrados de los
+números entre 1 y 100.*/
+
 #include <iostream>
 
 using namespace std;
