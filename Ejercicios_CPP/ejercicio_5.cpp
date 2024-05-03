@@ -14,17 +14,16 @@ int main() {
         cout << "Nota del estudiante " << i + 1 << ": ";
         cin >> notas[i];
         suma_notas += notas[i];
-    }
 
-    // Calcular la cantidad de aprobados y reprobados
-    for (int i = 0; i < num_estudiantes; ++i) {
-        if (notas[i] >= 60) {
+        // Verificar si el estudiante aprobó o reprobó
+        if (notas[i] >= 70) {
             aprobados++;
         } else {
             reprobados++;
         }
     }
 
+    // Calcular el promedio general
     float promedio_general = static_cast<float>(suma_notas) / num_estudiantes;
 
     cout << "Cantidad de alumnos aprobados: " << aprobados << endl;
