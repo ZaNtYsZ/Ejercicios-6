@@ -3,9 +3,9 @@ using namespace std;
 
 // Función para ingresar los elementos de una matriz
 void ingresarMatriz(int matriz[][10], int& filas, int& columnas) {
-    cout << "Ingrese el número de filas (hasta 10): ";
+    cout << "Ingrese el número de filas hasta 10: ";
     cin >> filas;
-    cout << "Ingrese el número de columnas (hasta 10): ";
+    cout << "Ingrese el número de columnas hasta 10: ";
     cin >> columnas;
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
@@ -49,7 +49,7 @@ int main() {
 
     // Verificar si las dimensiones son compatibles para la multiplicación
     if (columnas1 != filas2) {
-        cout << "Las dimensiones de las matrices no son compatibles para la multiplicación." << endl;
+        cout << "Las dimensiones de las matrices no son compatibles para la multiplicación..." << endl;
     } else {
         // Realizar la multiplicación de matrices
         multiplicarMatrices(matriz1, matriz2, matrizResultante, filas1, columnas1, filas2, columnas2);
